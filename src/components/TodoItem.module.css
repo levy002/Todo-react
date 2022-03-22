@@ -1,0 +1,37 @@
+.item {
+  font-size: 1.2rem;
+  list-style-type: none;
+  padding: 17px 0px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.checkbox {
+  margin-right: 15px;
+}
+
+.item button {
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+  float: right;
+  outline: none;
+  background-color: #fff;
+  height: 50px;
+  width: 50px;
+  margin: -10px 0 0 10px;
+}
+
+.item button svg {
+  width: 40px;
+  height: 25px;
+}
+
+.item button svg:hover {
+  color: red;
+}
+
+.textInput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dfdfdf;
+}
