@@ -1,10 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const About = () => {
+    const styles = {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        fontSize: 50,
+        fontWeight: "bold",
+        color: 'green',
+    }
   return (
     <>
-      <div>hello 'Levy' from about page</div>
+      <div style={styles}>hello from about page</div>
     </>
   );
 };
