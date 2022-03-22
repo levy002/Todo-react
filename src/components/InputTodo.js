@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { IoMdAddCircle } from "react-icons/io";
 
 const InputTodo = (props) => {
   const [inputText, setInputText] = useState({
@@ -34,7 +35,9 @@ const InputTodo = (props) => {
         name="title"
         onChange={onChange}
       />
-      <button className="input-submit">Submit</button>
+      <button className="input-submit">
+        <IoMdAddCircle />
+      </button>
     </form>
   );
 };

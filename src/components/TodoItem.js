@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { IoMdTrash } from 'react-icons/io';
 import styles from './TodoItem.module.css';
 
 const TodoItem = (props) => {
@@ -45,7 +46,9 @@ const TodoItem = (props) => {
           checked={completed}
           onChange={() => props.handleChangeProps(id)}
         />
-        <button onClick={() => props.deleteTodoProps(id)}>Delete</button>
+        <button onClick={() => props.deleteTodoProps(id)}>
+          <IoMdTrash />
+        </button>
         <span style={completed ? completedStyle : null}>{title}</span>
       </div>
       <input
