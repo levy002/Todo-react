@@ -12,6 +12,25 @@ body {
   height: 100vh;
 }
 
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  margin-right: 100px;
+  margin-top: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #000;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: green;
+}
+
 .container {
   display: flex;
   flex-direction: column;
