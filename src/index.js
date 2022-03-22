@@ -1,6 +1,6 @@
 import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { HashRouter, Routes, Route, Link } from "react-router-dom";
 import TodoContainer from './components/TodoContainer';
 import './App.css';
 import About from "./pages/About";
@@ -9,14 +9,14 @@ import Navbar from './components/Navbar'
 
 ReactDOM.render(
   <StrictMode>
-    <Router>
+    <HashRouter>
       <Navbar />
       <Routes>
         <Route path="/" element={<TodoContainer />} />
         <Route path="/About" element={<About />} />
         <Route path="Contact" element={<Contact />} />
       </Routes>
-    </Router>
+    </HashRouter>
   </StrictMode>,
   document.getElementById('root'),
 );
