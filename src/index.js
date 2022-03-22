@@ -5,15 +5,12 @@ import TodoContainer from './components/TodoContainer';
 import './App.css';
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Navbar from './components/Navbar'
 
 ReactDOM.render(
   <StrictMode>
     <Router>
-      <nav>
-        <Link to="/About">About</Link>
-        <Link to="/Contact">Contact</Link>
-        <Link to="/">Home</Link>
-      </nav>
+      <Navbar />
       <Routes>
         <Route path="/" element={<TodoContainer />} />
         <Route path="/About" element={<About />} />
