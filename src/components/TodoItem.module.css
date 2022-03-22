@@ -11,15 +11,23 @@
 
 .item button {
   font-size: 13px;
-  background: #f1f3f4;
   border: none;
   cursor: pointer;
   float: right;
   outline: none;
-  border-radius: 100px;
+  background-color: #fff;
   height: 50px;
   width: 50px;
   margin: -10px 0 0 10px;
+}
+
+.item button svg {
+  width: 40px;
+  height: 25px;
+}
+
+.item button svg:hover {
+  color: red;
 }
 
 .textInput {

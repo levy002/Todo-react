@@ -50,11 +50,16 @@ body {
 
 .input-submit {
   background: transparent;
-  color: #5b5b5b;
   text-transform: capitalize;
   cursor: pointer;
   font-weight: 600;
   margin-right: 10px;
+}
+
+.input-submit svg {
+  width: 30px;
+  height: 20px;
+  color: green;
 }
 
 .input-text,
